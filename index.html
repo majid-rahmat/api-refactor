@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>WikiMarkit</title>
+	<link rel="stylesheet" href="assets/css/jquery-ui.css">
+	<link rel="stylesheet" href="assets/css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Boogaloo|Lobster" rel="stylesheet">
+</head>
+<body id="top">
+
+	<section id="banner" data-video="images/Big-Apple">
+		<div class="inner">
+			<header>
+				<h1>WikiMarkit</h1>
+				<p>As a former equities analyst, I often found myself using the tools provided as a jumping off point, pre-due diligence.<br> 
+				Current information piqued my curiosity while Wikipedia provided historical details that would indicate if the stock "had a story".<br> 
+				Good luck and happy investing!    
+
+				<h5>Search Wikipedia on the left and Markit on Demand on the right. <br>
+				Please note, Markit's search only accepts stock symbols - notable ones include FB (Facebook), NKE (Nike), MSFT (Microsoft), AAPL (Apple), and GOOG (Alphabet Inc)</h5>
+			</header>
+			<a href="#main" class="more">Learn More</a>
+		</div>
+	</section>
+
+
+
+
+
+
+	<!-- <header>
+		<h1>WikiMarkit</h1>
+		<h3>Welcome to WikiMarkit. Search Wikipedia on the left and Markit on Demand on the right.</h3> 
+		<h3>Please note, Markit's search only accepts stock symbols - notable ones include FB (Facebook), NKE (Nike), MSFT (Microsoft), AAPL (Apple), and GOOG (Alphabet Inc)</h3>	
+	</header> -->
+
+	<div id="main wrapper">
+		<div id="container1">
+			<div id="column1">
+				<input id="wikisearch" name="search1" placeholder="Search Wiki">
+				<button id='wiki-search'>Submit</button>
+				<div id="wiki-results"></div>
+			</div>
+		<div id="column2">
+			<input id="markitsearch" name="search2" placeholder="Search MoD with symbol">
+			<button id='markit-search'>Submit</button>
+			<ul id="markit-results"></ul>
+			<ul id="chartDemoContainer"></ul>
+		</div>
+	</div>
+</div>
+<footer>
+	<p>The data is collated thanks to <a href="https://www.mediawiki.org/wiki/API:Main_page">Wikipedia</a>, <a href="http://dev.markitondemand.com/MODApis/">Markit on Demand</a>, and <a href="http://www.highcharts.com/">Highcharts</a></p>
+</footer>
+
+<script src="https://code.jquery.com/jquery-latest.min.js"></script>
+<script src="assets/js/jquery.poptrox.min.js"></script>
+<script src="assets/js/jquery.scrolly.min.js"></script>
+<script src="https://code.highcharts.com/stock/highstock.js"></script>
+<script src="https://code.highcharts.com/stock/modules/exporting.js"></script>
+<script src="assets/js/app.js"></script>
+<script src="assets/js/markit.js"></script>
+<script src="assets/js/chart.js"></script>
+<script src="assets/js/skel.min.js"></script>
+<script src="assets/js/util.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
