@@ -15,8 +15,8 @@ $(function() {
             success: function(data, status, jqXHR) {
                 //console.log(data);
                 $("#wiki-results").html();
-                for(var i=0;i<data[1].length;i++){
-                    $("#wiki-results").append("<div><div class='well'><a href="+data[3][i]+"><h2>" + data[1][i]+ "</h2>" + "<p>" + data[2][i] + "</p></a></div></div>");
+                for(var i=0;i<data[0].length;i++){
+                    $("#wiki-results").append("<a href="+data[3][i]+"><h2>" + data[1][i]+ "</h2>" + "<p>" + data[2][i] + "</p></a>");
                 }
             }
         })
@@ -36,8 +36,8 @@ $(function() {
             success: function(data, status, jqXHR) {
                 //console.log(data);
                 $("#wiki-results").html();
-                for(var i=0;i<data[1].length;i++){
-                    $("#wiki-results").append("<div><div class='well'><a href="+data[3][i]+"><h2>" + data[1][i]+ "</h2>" + "<p>" + data[2][i] + "</p></a></div></div>");
+                for(var i=0;i<data[0].length;i++){
+                    $("#wiki-results").append("<a href="+data[3][i]+"><h2>" + data[1][i]+ "</h2>" + "<p>" + data[2][i] + "</p></a>");
                 }
             }
         })

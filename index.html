@@ -35,7 +35,33 @@
 		<h3>Please note, Markit's search only accepts stock symbols - notable ones include FB (Facebook), NKE (Nike), MSFT (Microsoft), AAPL (Apple), and GOOG (Alphabet Inc)</h3>	
 	</header> -->
 
-	<div id="main wrapper">
+	<section id="three" class="wrapper align-center">
+				<div class="inner">
+					<div class="flex flex-2">
+						<article>
+							<div class="image round">
+								<img src="images/wikipedia.jpg" alt="Wiki" width="75%" />
+							</div>
+							<div class="formss">
+							<input id="wikisearch" name="search1" placeholder="Search Wiki">
+							<button id='wiki-search'>Submit</button></div>
+							<div id="wiki-results"></div>
+						</article>
+						<article>
+							<div class="image round">
+								<img src="images/markit.jpg" alt="MoD" width="52%" />
+							</div>
+							
+							<input id="markitsearch" name="search2" placeholder="Search MoD with symbol">
+							<button id='markit-search'>Submit</button>
+							<ul id="markit-results"></ul>
+							<ul id="chartDemoContainer"></ul>
+						</article>
+					</div>
+				</div>
+			</section>
+
+<!-- 	<div id="main wrapper">
 		<div id="container1">
 			<div id="column1">
 				<input id="wikisearch" name="search1" placeholder="Search Wiki">
@@ -49,17 +75,16 @@
 			<ul id="chartDemoContainer"></ul>
 		</div>
 	</div>
-</div>
-
+</div> -->
 
 <footer id="footer">
 					<div class="inner">
-						<img class="icons" src="images/WM.jpg">
 						
 						<p>The data is collated thanks to <a href="https://www.mediawiki.org/wiki/API:Main_page">Wikipedia</a>, <a href="http://dev.markitondemand.com/MODApis/">Markit on Demand</a>, and <a href="http://www.highcharts.com/">Highcharts</a> </p>
 						
 						<p class="copyright">&copy; 2017. Video: <a href="http://coverr.co/">Coverr</a>.</p>
 						
+						<img class="icons" src="images/WM.jpg">
 					</div>
 				</footer>
 
