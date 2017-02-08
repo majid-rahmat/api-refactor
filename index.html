@@ -10,58 +10,79 @@
 </head>
 <body id="top">
 
-	<section id="banner" data-video="images/Big-Apple">
-		<div class="inner">
-			<header>
-				<h1>WikiMarkit</h1>
-				<p>As a former equities analyst, I often found myself using the tools provided as a jumping off point, pre-due diligence.Current information piqued my curiosity while Wikipedia provided historical details that would indicate if the stock "had a story".
-				<br>
-				<br>
-				Search Wikipedia on the left and Markit on Demand on the right.Please note, Markit's search only accepts stock symbols - notable ones include FB (Facebook), NKE (Nike), MSFT (Microsoft), AAPL (Apple), and GOOG (Alphabet Inc)
-				<br>
-				<br> 
-				<br> 
-				Good luck and happy investing!    
+<section id="banner" data-video="images/Big-Apple">
+	<div class="inner">
+		<header>
+			<h1>WikiMarkit</h1>
+			<p>As a former equities analyst, I often found myself using the tools provided as a jumping off point, pre-due diligence.Current information piqued my curiosity while Wikipedia provided historical details that would indicate if the stock "had a story".
+			<br>
+			<br>
+			Search Wikipedia on the left and Markit on Demand on the right.Please note, Markit's search only accepts stock symbols - notable ones include FB (Facebook), NKE (Nike), MSFT (Microsoft), AAPL (Apple), and GOOG (Alphabet Inc)
+			<br>
+			<br> 
+			<br> 
+			Good luck and happy investing!    				
+		</header>
+	</div>
+</section>
 
-				<!-- <h5>Search Wikipedia on the left and Markit on Demand on the right. <br>
-				Please note, Markit's search only accepts stock symbols - notable ones include FB (Facebook), NKE (Nike), MSFT (Microsoft), AAPL (Apple), and GOOG (Alphabet Inc)</h5> -->
-			</header>
+<section id="three" class="wrapper align-center">
+	<div class="inner">
+		<div class="flex flex-2">
+			<article>
+				<div class="image round">
+					<img class='y' src="images/wikipedia.jpg" alt="Wiki" />
+				</div>
+
+				<input id="wikisearch" name="search1" placeholder="Search">
+				<button id='wiki-search'>Search Wiki</button>
+				<div id="wiki-results"></div>
+			</article>
+			<article>
+				<div class="image round">
+					<img class='x' src="images/markit.jpg" alt="MoD" width="100%" />
+				</div>
+				
+				<input id="markitsearch" name="search2" placeholder="Search with symbol">
+				<button id='markit-search'>Search MoD</button>
+				<ul id="markit-results"></ul>
+				<ul id="chartDemoContainer"></ul>
+			</article>
 		</div>
-	</section>
+	</div>
+</section>
 
-	<!-- <header>
+<footer id="footer">
+					<div class="inner">
+						
+						<p>The data is collated thanks to <a href="https://www.mediawiki.org/wiki/API:Main_page">Wikipedia</a>, <a href="http://dev.markitondemand.com/MODApis/">Markit on Demand</a>, and <a href="http://www.highcharts.com/">Highcharts</a> </p>
+						
+						<p class="copyright">&copy; 2017. Video: <a href="http://coverr.co/">Coverr</a>.</p>
+						
+						<img class="icons" src="images/WM.jpg" width="20%">
+					</div>
+				</footer>
+
+<script src="https://code.jquery.com/jquery-latest.min.js"></script>
+<script src="assets/js/jquery.poptrox.min.js"></script>
+<script src="assets/js/jquery.scrolly.min.js"></script>
+<script src="https://code.highcharts.com/stock/highstock.js"></script>
+<script src="https://code.highcharts.com/stock/modules/exporting.js"></script>
+<script src="assets/js/app.js"></script>
+<script src="assets/js/markit.js"></script>
+<script src="assets/js/chart.js"></script>
+<script src="assets/js/skel.min.js"></script>
+<script src="assets/js/util.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+
+<!-- <header>
 		<h1>WikiMarkit</h1>
 		<h3>Welcome to WikiMarkit. Search Wikipedia on the left and Markit on Demand on the right.</h3> 
 		<h3>Please note, Markit's search only accepts stock symbols - notable ones include FB (Facebook), NKE (Nike), MSFT (Microsoft), AAPL (Apple), and GOOG (Alphabet Inc)</h3>	
 	</header> -->
 
-	<section id="three" class="wrapper align-center">
-				<div class="inner">
-					<div class="flex flex-2">
-						<article>
-							<div class="image round">
-								<img src="images/wikipedia.jpg" alt="Wiki" width="75%" />
-							</div>
-							<div class="formss">
-							<input id="wikisearch" name="search1" placeholder="Search Wiki">
-							<button id='wiki-search'>Submit</button></div>
-							<div id="wiki-results"></div>
-						</article>
-						<article>
-							<div class="image round">
-								<img src="images/markit.jpg" alt="MoD" width="52%" />
-							</div>
-							
-							<input id="markitsearch" name="search2" placeholder="Search MoD with symbol">
-							<button id='markit-search'>Submit</button>
-							<ul id="markit-results"></ul>
-							<ul id="chartDemoContainer"></ul>
-						</article>
-					</div>
-				</div>
-			</section>
-
-<!-- 	<div id="main wrapper">
+	<!-- 	<div id="main wrapper">
 		<div id="container1">
 			<div id="column1">
 				<input id="wikisearch" name="search1" placeholder="Search Wiki">
@@ -77,30 +98,6 @@
 	</div>
 </div> -->
 
-<footer id="footer">
-					<div class="inner">
-						
-						<p>The data is collated thanks to <a href="https://www.mediawiki.org/wiki/API:Main_page">Wikipedia</a>, <a href="http://dev.markitondemand.com/MODApis/">Markit on Demand</a>, and <a href="http://www.highcharts.com/">Highcharts</a> </p>
-						
-						<p class="copyright">&copy; 2017. Video: <a href="http://coverr.co/">Coverr</a>.</p>
-						
-						<img class="icons" src="images/WM.jpg">
-					</div>
-				</footer>
-
 <!-- <footer>
 	<p>The data is collated thanks to <a href="https://www.mediawiki.org/wiki/API:Main_page">Wikipedia</a>, <a href="http://dev.markitondemand.com/MODApis/">Markit on Demand</a>, and <a href="http://www.highcharts.com/">Highcharts</a></p>
 </footer> -->
-
-<script src="https://code.jquery.com/jquery-latest.min.js"></script>
-<script src="assets/js/jquery.poptrox.min.js"></script>
-<script src="assets/js/jquery.scrolly.min.js"></script>
-<script src="https://code.highcharts.com/stock/highstock.js"></script>
-<script src="https://code.highcharts.com/stock/modules/exporting.js"></script>
-<script src="assets/js/app.js"></script>
-<script src="assets/js/markit.js"></script>
-<script src="assets/js/chart.js"></script>
-<script src="assets/js/skel.min.js"></script>
-<script src="assets/js/util.js"></script>
-<script src="assets/js/main.js"></script>
-</body>

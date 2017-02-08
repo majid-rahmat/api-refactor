@@ -5,7 +5,7 @@ $(function() {
         if(e.keyCode===13){
             var searchTerm = $("#wikisearch").val();
             $("#wiki-results").empty();
-            var url = "https://en.wikipedia.org/w/api.php?action=opensearch&search="+ searchTerm +"&format=json&callback=?"; 
+            var url = "https://en.wikipedia.org/w/api.php?action=opensearch&search="+ searchTerm +"&imlimit=5&format=json&callback=?"; 
             $.ajax({
             url: url,
             type: 'GET',
@@ -16,7 +16,7 @@ $(function() {
                 //console.log(data);
                 $("#wiki-results").html();
                 for(var i=0;i<data[0].length;i++){
-                    $("#wiki-results").append("<a href="+data[3][i]+"><h2>" + data[1][i]+ "</h2>" + "<p>" + data[2][i] + "</p></a>");
+                    $("#wiki-results").append("<a href="+data[3][i]+"><h2 class='m'>" + data[1][i]+ "</h2>" + "<p class='n'>" + data[2][i] + "</p></a>");
                 }
             }
         })
@@ -26,7 +26,7 @@ $(function() {
     $("#wiki-search").on("click", function() {
         var searchTerm = $("#wikisearch").val();
         $("#wiki-results").empty();
-        var url = "https://en.wikipedia.org/w/api.php?action=opensearch&search="+ searchTerm +"&format=json&callback=?"; 
+        var url = "https://en.wikipedia.org/w/api.php?action=opensearch&search="+ searchTerm +"&imlimit=5&format=json&callback=?"; 
         $.ajax({
             url: url,
             type: 'GET',
